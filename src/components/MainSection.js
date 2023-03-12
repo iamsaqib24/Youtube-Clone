@@ -1,8 +1,11 @@
 import React from 'react'
+import VideoContainer from './VideoContainer'
 
 const MainSection = () => {
   return (
-    <div>MainSection</div>
+    <div>
+      <VideoContainer />
+    </div>
   )
 }
 

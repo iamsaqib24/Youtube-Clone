@@ -18,10 +18,10 @@ const Head = () => {
     <div className="flex justify-between p-1 m-1 shadow-sm">
         <div className="flex">
             <img onClick={() => toggleHandler()} className="h-10 mx-2 cursor-pointer" src={HB} alt="hamburger" />
-            <img className="h-10 cursor-pointer" src={Logo} alt="logo" />
+            <a href="/"><img className="h-10 cursor-pointer" src={Logo} alt="logo" /></a>
         </div>
         <div className="m-auto ">
-            <input className="w-96 border border-gray-300 p-2 rounded-l-full" type="text" />
+            <input className="w-96 border border-gray-300 p-2 rounded-l-full" type="text" placeholder="Search" />
             <button className="border border-gray-300 p-2 rounded-r-full px-5 py-2 bg-gray-100">🔍</button>
         </div>
         <div className="">
