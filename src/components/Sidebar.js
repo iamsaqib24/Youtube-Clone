@@ -14,12 +14,13 @@ function Sidebar() {
   if(!isHamOpen) return null
 
   return (
-    <div className="w-56 shadow-md p-4">
+    <div className="w-64 shadow-md p-4 z-10">
       <ul className="">
         <li className="cursor-pointer p-2"><Link to="/"><img className="h-5 mb-1 mr-3 inline" src={Home} alt="home" /> Home</Link></li>
-        <li className="cursor-pointer p-2"><img className="h-5 mb-1 mr-3 inline" src={Shorts} alt="shorts" /> Shorts</li>
-        <li className="cursor-pointer p-2"><img className="h-5 mb-1 mr-3 inline" src={Subscribe} alt="subscribe" /> Subscriptions</li>
+        <li className="cursor-pointer p-2"><Link to="/"><img className="h-5 mb-1 mr-3 inline" src={Shorts} alt="shorts" /> Shorts</Link></li>
+        <li className="cursor-pointer p-2"><Link to="/"><img className="h-5 mb-1 mr-3 inline" src={Subscribe} alt="subscribe" /> Subscriptions</Link></li>
       </ul>
+
       <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700"></hr>
 
       <ul>
@@ -29,6 +30,7 @@ function Sidebar() {
         <li className="cursor-pointer p-2">Watch Later</li>
         <li className="cursor-pointer p-2">Liked Videos</li>
       </ul>
+
       <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700"></hr>
 
     </div>
