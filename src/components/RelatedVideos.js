@@ -9,7 +9,7 @@ const RelatedVideos = () => {
   const getRelatedVideos = async () => {
     const data = await fetch(RELATED_VIDEO_API + process.env.REACT_API_KEY);
     const json = await data.json();
-    console.log("Api related videos : " + json);
+    // console.log("Api related videos : " + json);
   };
 
   return <div>RelatedVideos</div>;

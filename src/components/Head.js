@@ -8,7 +8,7 @@ import { YOUTUBE_SEARCH_API } from "../constants/constants";
 import { cachedResults } from "../utils/searchSlice";
 
 function Head() {
-  console.log(process.env.REACT_APP_KEY);
+  // console.log(process.env.REACT_APP_KEY);
 
   const [searchText, setSearchText] = useState("");
   const [suggestions, setSuggestions] = useState([]);
